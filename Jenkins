@@ -7,7 +7,7 @@ git 'https://github.com/jogeswar18/DockerFile.git'
 }
 stage("Build images")
 {
-app=docker.build("jogeswar189/apache3")
+app = docker.build("jogeswar189/apache3")
 }
 stage("push the image")
 {
