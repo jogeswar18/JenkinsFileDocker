@@ -13,7 +13,7 @@ stage("push the image")
 {
 docker.withRegistry('https://hub.docker.com','DockerId1234')
 {
-docker.push("1.0")
+app.push("1.0")
 }
 }
 }
