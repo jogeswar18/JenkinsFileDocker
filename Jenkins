@@ -11,7 +11,7 @@ app = docker.build("jogeswar189/apache3")
 }
 stage("push the image")
 {
-docker.withRegistry('https://hub.docker.com','DockerId1234')
+docker.withRegistry('https://registry.hub.docker.com','DockerId1234')
 {
 app.push("1.0")
 }
